@@ -179,7 +179,7 @@
 {
     id<UIViewControllerAnimatedTransitioning> result = nil;
     
-    MethodInfo *methodInfo = [self lastMethodInfoWithName:@"preferredNavigationBarBackgroundColor"];
+    MethodInfo *methodInfo = [self lastMethodInfoWithName:@"navigationController:animationControllerForOperation:fromViewController:toViewController:"];
     if ([self isPrimaryClassRealizeMethod:methodInfo])
     {
         typedef id<UIViewControllerAnimatedTransitioning> (*funcType)(id, SEL, UINavigationController *, UINavigationControllerOperation, UIViewController *, UIViewController *);
