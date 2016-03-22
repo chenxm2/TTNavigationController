@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		479139511CA1414D00D8340F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 479139501CA1414D00D8340F /* main.m */; };
+		479139541CA1414D00D8340F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 479139531CA1414D00D8340F /* AppDelegate.m */; };
+		479139571CA1414D00D8340F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 479139561CA1414D00D8340F /* ViewController.m */; };
+		4791395A1CA1414D00D8340F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 479139581CA1414D00D8340F /* Main.storyboard */; };
+		4791395C1CA1414D00D8340F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4791395B1CA1414D00D8340F /* Assets.xcassets */; };
+		4791395F1CA1414D00D8340F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4791395D1CA1414D00D8340F /* LaunchScreen.storyboard */; };
+		4791396A1CA1414D00D8340F /* TTNavigationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 479139691CA1414D00D8340F /* TTNavigationDemoTests.m */; };
+		479139751CA1414D00D8340F /* TTNavigationDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 479139741CA1414D00D8340F /* TTNavigationDemoUITests.m */; };
+		479139981CA141AE00D8340F /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 479139831CA141AE00D8340F /* MainTabBarController.m */; };
+		479139991CA141AE00D8340F /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 479139861CA141AE00D8340F /* Settings.storyboard */; };
+		4791399A1CA141AE00D8340F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 479139881CA141AE00D8340F /* SettingsViewController.m */; };
+		4791399B1CA141AE00D8340F /* SettingsViewControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4791398A1CA141AE00D8340F /* SettingsViewControllerFactory.m */; };
+		4791399C1CA141AE00D8340F /* StoryboardViewControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4791398C1CA141AE00D8340F /* StoryboardViewControllerFactory.m */; };
+		4791399D1CA141AE00D8340F /* TTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4791398F1CA141AE00D8340F /* TTNavigationController.m */; };
+		4791399E1CA141AE00D8340F /* TTPopAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 479139911CA141AE00D8340F /* TTPopAnimatedTransition.m */; };
+		4791399F1CA141AE00D8340F /* TTPushAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 479139931CA141AE00D8340F /* TTPushAnimatedTransition.m */; };
+		479139A01CA141AE00D8340F /* UIViewController+TTNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 479139961CA141AE00D8340F /* UIViewController+TTNavigation.m */; };
+		479139AE1CA141C400D8340F /* CustomPopAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 479139A31CA141C400D8340F /* CustomPopAnimatedTransition.m */; };
+		479139AF1CA141C400D8340F /* CustomPushAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 479139A51CA141C400D8340F /* CustomPushAnimatedTransition.m */; };
+		479139B01CA141C400D8340F /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 479139A61CA141C400D8340F /* HomePage.storyboard */; };
+		479139B11CA141C400D8340F /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 479139A81CA141C400D8340F /* HomePageViewController.m */; };
+		479139B21CA141C400D8340F /* HomePageViewControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 479139AA1CA141C400D8340F /* HomePageViewControllerFactory.m */; };
+		479139B31CA141C400D8340F /* secondHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 479139AC1CA141C400D8340F /* secondHomeViewController.m */; };
+		479139B41CA141C400D8340F /* secondHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 479139AD1CA141C400D8340F /* secondHomeViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		479139661CA1414D00D8340F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 479139441CA1414D00D8340F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4791394B1CA1414D00D8340F;
+			remoteInfo = TTNavigationDemo;
+		};
+		479139711CA1414D00D8340F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 479139441CA1414D00D8340F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4791394B1CA1414D00D8340F;
+			remoteInfo = TTNavigationDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4791394C1CA1414D00D8340F /* TTNavigationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTNavigationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		479139501CA1414D00D8340F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		479139521CA1414D00D8340F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		479139531CA1414D00D8340F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		479139551CA1414D00D8340F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		479139561CA1414D00D8340F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		479139591CA1414D00D8340F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4791395B1CA1414D00D8340F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4791395E1CA1414D00D8340F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		479139601CA1414D00D8340F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		479139651CA1414D00D8340F /* TTNavigationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTNavigationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		479139691CA1414D00D8340F /* TTNavigationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTNavigationDemoTests.m; sourceTree = "<group>"; };
+		4791396B1CA1414D00D8340F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		479139701CA1414D00D8340F /* TTNavigationDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTNavigationDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		479139741CA1414D00D8340F /* TTNavigationDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTNavigationDemoUITests.m; sourceTree = "<group>"; };
+		479139761CA1414D00D8340F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		479139821CA141AE00D8340F /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		479139831CA141AE00D8340F /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		479139861CA141AE00D8340F /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		479139871CA141AE00D8340F /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		479139881CA141AE00D8340F /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		479139891CA141AE00D8340F /* SettingsViewControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewControllerFactory.h; sourceTree = "<group>"; };
+		4791398A1CA141AE00D8340F /* SettingsViewControllerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewControllerFactory.m; sourceTree = "<group>"; };
+		4791398B1CA141AE00D8340F /* StoryboardViewControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardViewControllerFactory.h; sourceTree = "<group>"; };
+		4791398C1CA141AE00D8340F /* StoryboardViewControllerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardViewControllerFactory.m; sourceTree = "<group>"; };
+		4791398E1CA141AE00D8340F /* TTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNavigationController.h; sourceTree = "<group>"; };
+		4791398F1CA141AE00D8340F /* TTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTNavigationController.m; sourceTree = "<group>"; };
+		479139901CA141AE00D8340F /* TTPopAnimatedTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPopAnimatedTransition.h; sourceTree = "<group>"; };
+		479139911CA141AE00D8340F /* TTPopAnimatedTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTPopAnimatedTransition.m; sourceTree = "<group>"; };
+		479139921CA141AE00D8340F /* TTPushAnimatedTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPushAnimatedTransition.h; sourceTree = "<group>"; };
+		479139931CA141AE00D8340F /* TTPushAnimatedTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTPushAnimatedTransition.m; sourceTree = "<group>"; };
+		479139941CA141AE00D8340F /* TTViewControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTViewControllerProtocol.h; sourceTree = "<group>"; };
+		479139951CA141AE00D8340F /* UIViewController+TTNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TTNavigation.h"; sourceTree = "<group>"; };
+		479139961CA141AE00D8340F /* UIViewController+TTNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TTNavigation.m"; sourceTree = "<group>"; };
+		479139971CA141AE00D8340F /* TTNavigationDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TTNavigationDemo-Prefix.pch"; sourceTree = "<group>"; };
+		479139A21CA141C400D8340F /* CustomPopAnimatedTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPopAnimatedTransition.h; sourceTree = "<group>"; };
+		479139A31CA141C400D8340F /* CustomPopAnimatedTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPopAnimatedTransition.m; sourceTree = "<group>"; };
+		479139A41CA141C400D8340F /* CustomPushAnimatedTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPushAnimatedTransition.h; sourceTree = "<group>"; };
+		479139A51CA141C400D8340F /* CustomPushAnimatedTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPushAnimatedTransition.m; sourceTree = "<group>"; };
+		479139A61CA141C400D8340F /* HomePage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
+		479139A71CA141C400D8340F /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		479139A81CA141C400D8340F /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		479139A91CA141C400D8340F /* HomePageViewControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewControllerFactory.h; sourceTree = "<group>"; };
+		479139AA1CA141C400D8340F /* HomePageViewControllerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewControllerFactory.m; sourceTree = "<group>"; };
+		479139AB1CA141C400D8340F /* secondHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondHomeViewController.h; sourceTree = "<group>"; };
+		479139AC1CA141C400D8340F /* secondHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondHomeViewController.m; sourceTree = "<group>"; };
+		479139AD1CA141C400D8340F /* secondHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = secondHomeViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		479139491CA1414D00D8340F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		479139621CA1414D00D8340F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4791396D1CA1414D00D8340F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		479139431CA1414D00D8340F = {
+			isa = PBXGroup;
+			children = (
+				4791394E1CA1414D00D8340F /* TTNavigationDemo */,
+				479139681CA1414D00D8340F /* TTNavigationDemoTests */,
+				479139731CA1414D00D8340F /* TTNavigationDemoUITests */,
+				4791394D1CA1414D00D8340F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4791394D1CA1414D00D8340F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4791394C1CA1414D00D8340F /* TTNavigationDemo.app */,
+				479139651CA1414D00D8340F /* TTNavigationDemoTests.xctest */,
+				479139701CA1414D00D8340F /* TTNavigationDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4791394E1CA1414D00D8340F /* TTNavigationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4791398D1CA141AE00D8340F /* TTNavigation */,
+				479139851CA141AE00D8340F /* Setting */,
+				479139841CA141AE00D8340F /* Me */,
+				479139A11CA141C400D8340F /* HomePage */,
+				479139821CA141AE00D8340F /* MainTabBarController.h */,
+				479139831CA141AE00D8340F /* MainTabBarController.m */,
+				4791398B1CA141AE00D8340F /* StoryboardViewControllerFactory.h */,
+				4791398C1CA141AE00D8340F /* StoryboardViewControllerFactory.m */,
+				479139971CA141AE00D8340F /* TTNavigationDemo-Prefix.pch */,
+				479139521CA1414D00D8340F /* AppDelegate.h */,
+				479139531CA1414D00D8340F /* AppDelegate.m */,
+				479139551CA1414D00D8340F /* ViewController.h */,
+				479139561CA1414D00D8340F /* ViewController.m */,
+				479139581CA1414D00D8340F /* Main.storyboard */,
+				4791395B1CA1414D00D8340F /* Assets.xcassets */,
+				4791395D1CA1414D00D8340F /* LaunchScreen.storyboard */,
+				479139601CA1414D00D8340F /* Info.plist */,
+				4791394F1CA1414D00D8340F /* Supporting Files */,
+			);
+			path = TTNavigationDemo;
+			sourceTree = "<group>";
+		};
+		4791394F1CA1414D00D8340F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				479139501CA1414D00D8340F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		479139681CA1414D00D8340F /* TTNavigationDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				479139691CA1414D00D8340F /* TTNavigationDemoTests.m */,
+				4791396B1CA1414D00D8340F /* Info.plist */,
+			);
+			path = TTNavigationDemoTests;
+			sourceTree = "<group>";
+		};
+		479139731CA1414D00D8340F /* TTNavigationDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				479139741CA1414D00D8340F /* TTNavigationDemoUITests.m */,
+				479139761CA1414D00D8340F /* Info.plist */,
+			);
+			path = TTNavigationDemoUITests;
+			sourceTree = "<group>";
+		};
+		479139841CA141AE00D8340F /* Me */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		479139851CA141AE00D8340F /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				479139861CA141AE00D8340F /* Settings.storyboard */,
+				479139871CA141AE00D8340F /* SettingsViewController.h */,
+				479139881CA141AE00D8340F /* SettingsViewController.m */,
+				479139891CA141AE00D8340F /* SettingsViewControllerFactory.h */,
+				4791398A1CA141AE00D8340F /* SettingsViewControllerFactory.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		4791398D1CA141AE00D8340F /* TTNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				4791398E1CA141AE00D8340F /* TTNavigationController.h */,
+				4791398F1CA141AE00D8340F /* TTNavigationController.m */,
+				479139901CA141AE00D8340F /* TTPopAnimatedTransition.h */,
+				479139911CA141AE00D8340F /* TTPopAnimatedTransition.m */,
+				479139921CA141AE00D8340F /* TTPushAnimatedTransition.h */,
+				479139931CA141AE00D8340F /* TTPushAnimatedTransition.m */,
+				479139941CA141AE00D8340F /* TTViewControllerProtocol.h */,
+				479139951CA141AE00D8340F /* UIViewController+TTNavigation.h */,
+				479139961CA141AE00D8340F /* UIViewController+TTNavigation.m */,
+			);
+			path = TTNavigation;
+			sourceTree = "<group>";
+		};
+		479139A11CA141C400D8340F /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				479139A21CA141C400D8340F /* CustomPopAnimatedTransition.h */,
+				479139A31CA141C400D8340F /* CustomPopAnimatedTransition.m */,
+				479139A41CA141C400D8340F /* CustomPushAnimatedTransition.h */,
+				479139A51CA141C400D8340F /* CustomPushAnimatedTransition.m */,
+				479139A61CA141C400D8340F /* HomePage.storyboard */,
+				479139A71CA141C400D8340F /* HomePageViewController.h */,
+				479139A81CA141C400D8340F /* HomePageViewController.m */,
+				479139A91CA141C400D8340F /* HomePageViewControllerFactory.h */,
+				479139AA1CA141C400D8340F /* HomePageViewControllerFactory.m */,
+				479139AB1CA141C400D8340F /* secondHomeViewController.h */,
+				479139AC1CA141C400D8340F /* secondHomeViewController.m */,
+				479139AD1CA141C400D8340F /* secondHomeViewController.xib */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4791394B1CA1414D00D8340F /* TTNavigationDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 479139791CA1414D00D8340F /* Build configuration list for PBXNativeTarget "TTNavigationDemo" */;
+			buildPhases = (
+				479139481CA1414D00D8340F /* Sources */,
+				479139491CA1414D00D8340F /* Frameworks */,
+				4791394A1CA1414D00D8340F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTNavigationDemo;
+			productName = TTNavigationDemo;
+			productReference = 4791394C1CA1414D00D8340F /* TTNavigationDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		479139641CA1414D00D8340F /* TTNavigationDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4791397C1CA1414D00D8340F /* Build configuration list for PBXNativeTarget "TTNavigationDemoTests" */;
+			buildPhases = (
+				479139611CA1414D00D8340F /* Sources */,
+				479139621CA1414D00D8340F /* Frameworks */,
+				479139631CA1414D00D8340F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				479139671CA1414D00D8340F /* PBXTargetDependency */,
+			);
+			name = TTNavigationDemoTests;
+			productName = TTNavigationDemoTests;
+			productReference = 479139651CA1414D00D8340F /* TTNavigationDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4791396F1CA1414D00D8340F /* TTNavigationDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4791397F1CA1414D00D8340F /* Build configuration list for PBXNativeTarget "TTNavigationDemoUITests" */;
+			buildPhases = (
+				4791396C1CA1414D00D8340F /* Sources */,
+				4791396D1CA1414D00D8340F /* Frameworks */,
+				4791396E1CA1414D00D8340F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				479139721CA1414D00D8340F /* PBXTargetDependency */,
+			);
+			name = TTNavigationDemoUITests;
+			productName = TTNavigationDemoUITests;
+			productReference = 479139701CA1414D00D8340F /* TTNavigationDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		479139441CA1414D00D8340F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = xianmingchen;
+				TargetAttributes = {
+					4791394B1CA1414D00D8340F = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					479139641CA1414D00D8340F = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 4791394B1CA1414D00D8340F;
+					};
+					4791396F1CA1414D00D8340F = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 4791394B1CA1414D00D8340F;
+					};
+				};
+			};
+			buildConfigurationList = 479139471CA1414D00D8340F /* Build configuration list for PBXProject "TTNavigationDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 479139431CA1414D00D8340F;
+			productRefGroup = 4791394D1CA1414D00D8340F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4791394B1CA1414D00D8340F /* TTNavigationDemo */,
+				479139641CA1414D00D8340F /* TTNavigationDemoTests */,
+				4791396F1CA1414D00D8340F /* TTNavigationDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4791394A1CA1414D00D8340F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				479139B01CA141C400D8340F /* HomePage.storyboard in Resources */,
+				4791395F1CA1414D00D8340F /* LaunchScreen.storyboard in Resources */,
+				4791395C1CA1414D00D8340F /* Assets.xcassets in Resources */,
+				4791395A1CA1414D00D8340F /* Main.storyboard in Resources */,
+				479139991CA141AE00D8340F /* Settings.storyboard in Resources */,
+				479139B41CA141C400D8340F /* secondHomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		479139631CA1414D00D8340F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4791396E1CA1414D00D8340F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		479139481CA1414D00D8340F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4791399B1CA141AE00D8340F /* SettingsViewControllerFactory.m in Sources */,
+				479139571CA1414D00D8340F /* ViewController.m in Sources */,
+				479139A01CA141AE00D8340F /* UIViewController+TTNavigation.m in Sources */,
+				479139541CA1414D00D8340F /* AppDelegate.m in Sources */,
+				479139B11CA141C400D8340F /* HomePageViewController.m in Sources */,
+				4791399A1CA141AE00D8340F /* SettingsViewController.m in Sources */,
+				4791399C1CA141AE00D8340F /* StoryboardViewControllerFactory.m in Sources */,
+				479139AF1CA141C400D8340F /* CustomPushAnimatedTransition.m in Sources */,
+				4791399F1CA141AE00D8340F /* TTPushAnimatedTransition.m in Sources */,
+				479139B31CA141C400D8340F /* secondHomeViewController.m in Sources */,
+				479139981CA141AE00D8340F /* MainTabBarController.m in Sources */,
+				479139AE1CA141C400D8340F /* CustomPopAnimatedTransition.m in Sources */,
+				479139B21CA141C400D8340F /* HomePageViewControllerFactory.m in Sources */,
+				479139511CA1414D00D8340F /* main.m in Sources */,
+				4791399D1CA141AE00D8340F /* TTNavigationController.m in Sources */,
+				4791399E1CA141AE00D8340F /* TTPopAnimatedTransition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		479139611CA1414D00D8340F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4791396A1CA1414D00D8340F /* TTNavigationDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4791396C1CA1414D00D8340F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				479139751CA1414D00D8340F /* TTNavigationDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		479139671CA1414D00D8340F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4791394B1CA1414D00D8340F /* TTNavigationDemo */;
+			targetProxy = 479139661CA1414D00D8340F /* PBXContainerItemProxy */;
+		};
+		479139721CA1414D00D8340F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4791394B1CA1414D00D8340F /* TTNavigationDemo */;
+			targetProxy = 479139711CA1414D00D8340F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		479139581CA1414D00D8340F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				479139591CA1414D00D8340F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4791395D1CA1414D00D8340F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4791395E1CA1414D00D8340F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		479139771CA1414D00D8340F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		479139781CA1414D00D8340F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4791397A1CA1414D00D8340F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TTNavigationDemo/TTNavigationDemo-Prefix.pch";
+				INFOPLIST_FILE = TTNavigationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TTNavigationDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4791397B1CA1414D00D8340F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TTNavigationDemo/TTNavigationDemo-Prefix.pch";
+				INFOPLIST_FILE = TTNavigationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TTNavigationDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4791397D1CA1414D00D8340F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TTNavigationDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TTNavigationDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTNavigationDemo.app/TTNavigationDemo";
+			};
+			name = Debug;
+		};
+		4791397E1CA1414D00D8340F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TTNavigationDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TTNavigationDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTNavigationDemo.app/TTNavigationDemo";
+			};
+			name = Release;
+		};
+		479139801CA1414D00D8340F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TTNavigationDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TTNavigationDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TTNavigationDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		479139811CA1414D00D8340F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TTNavigationDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TTNavigationDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TTNavigationDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		479139471CA1414D00D8340F /* Build configuration list for PBXProject "TTNavigationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				479139771CA1414D00D8340F /* Debug */,
+				479139781CA1414D00D8340F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		479139791CA1414D00D8340F /* Build configuration list for PBXNativeTarget "TTNavigationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4791397A1CA1414D00D8340F /* Debug */,
+				4791397B1CA1414D00D8340F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4791397C1CA1414D00D8340F /* Build configuration list for PBXNativeTarget "TTNavigationDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4791397D1CA1414D00D8340F /* Debug */,
+				4791397E1CA1414D00D8340F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4791397F1CA1414D00D8340F /* Build configuration list for PBXNativeTarget "TTNavigationDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				479139801CA1414D00D8340F /* Debug */,
+				479139811CA1414D00D8340F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 479139441CA1414D00D8340F /* Project object */;
+}
