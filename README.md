@@ -36,5 +36,5 @@
 * in your viewController(must subclass of UIViewController). The primary class method has
 * the higher priority.
 *
-* you can learn the useage detail from the TTNavigationDemo
+* you can learn more useage detail from the TTNavigationDemo
 */
