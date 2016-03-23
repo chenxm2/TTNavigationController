@@ -9,7 +9,6 @@
 #import "UIViewController+TTNavigation.h"
 #import <objc/runtime.h>
 
-
 @interface MethodInfo : NSObject
 @property (nonatomic, assign) IMP imp;
 @property (nonatomic, assign) SEL sel;
@@ -21,6 +20,13 @@
 @end
 
 @implementation UIViewController (TTNavigation)
+
+/*
+ * user can ignore it. it use by TTNavigationController
+ */
++ (void)TTCheckUIViewControllerTTNavigationCategoryExist
+{
+}
 
 - (MethodInfo *)lastMethodInfoWithName:(NSString *)methodName
 {
@@ -190,5 +196,4 @@
     
     return result;
 }
-
 @end

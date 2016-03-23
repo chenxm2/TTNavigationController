@@ -220,8 +220,18 @@
                                                          fromViewController:(UIViewController *)fromVC
                                                            toViewController:(UIViewController *)toVC
 {
-    //give back to realDeleagte
-    if ([_interceptor.realDelegate respondsToSelector:@selector(navigationController:animationControllerForOperation:fromViewController:toViewController:)]) {
+    
+    //remove the warning
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+
+    BOOL responds = [[UIViewController class] respondsToSelector:@selector(TTCheckUIViewControllerTTNavigationCategoryExist)];
+#pragma clang diagnostic pop
+    
+    if ([_interceptor.realDelegate respondsToSelector:@selector(navigationController:animationControllerForOperation:fromViewController:toViewController:)]
+        && !responds /*the project not use UIViewController+TTNavigation File*/)
+    {
+        //give control back to realDeleagte
         return [_interceptor.realDelegate navigationController:navigationController animationControllerForOperation:operation fromViewController:fromVC toViewController:toVC];
     }
     else if ([fromVC respondsToSelector:@selector(navigationController:animationControllerForOperation:fromViewController:toViewController:)] || [toVC respondsToSelector:@selector(navigationController:animationControllerForOperation:fromViewController:toViewController:)])

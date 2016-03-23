@@ -47,7 +47,7 @@
 
 #pragma mark - navigation push or pop Transitioning
 /*
- * realize the protocol method or realize by yourself's UINavigationControllerDelegate to custom your viewController's push or pop Transitioning.
+ * realize the protocol method to custom your viewController's push or pop Transitioning.
  * or you will get a default Transitioning by default， it like system
  *
  * important:if you realize the protocol, you should know that.
