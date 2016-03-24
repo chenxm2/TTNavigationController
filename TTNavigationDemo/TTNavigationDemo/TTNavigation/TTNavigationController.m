@@ -60,8 +60,10 @@
 {
     [super viewDidLoad];
     
-    UIScreenEdgePanGestureRecognizer * panRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(onPanGesture:)];
-    panRecognizer.edges = UIRectEdgeLeft;
+//    UIScreenEdgePanGestureRecognizer * panRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(onPanGesture:)];
+//    panRecognizer.edges = UIRectEdgeLeft;
+    
+    UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(onPanGesture:)];
     [self.view addGestureRecognizer:panRecognizer];
     
     _isPushingOrPoping = NO;
@@ -298,7 +300,6 @@
         return;
     }
     
-    viewController.hidesBottomBarWhenPushed = YES;
     [super pushViewController:viewController animated:animated];
 }
 

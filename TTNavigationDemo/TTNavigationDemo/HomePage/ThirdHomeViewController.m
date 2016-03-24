@@ -1,37 +1,27 @@
 //
-//  secondHomeViewController.m
-//  GoForward
+//  ThirdHomeViewController.m
+//  TTNavigationDemo
 //
-//  Created by xianmingchen on 16/3/18.
+//  Created by xianmingchen on 16/3/24.
 //  Copyright © 2016年 xianmingchen. All rights reserved.
 //
 
-#import "secondHomeViewController.h"
 #import "ThirdHomeViewController.h"
-@interface secondHomeViewController ()
+
+@interface ThirdHomeViewController ()
 
 @end
 
-@implementation secondHomeViewController
+@implementation ThirdHomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor greenColor];
     // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-- (IBAction)secondButtonClicked:(id)sender {
-    ThirdHomeViewController *thirdHomeViewController = [[ThirdHomeViewController alloc] init];
-    [self.navigationController pushViewController:thirdHomeViewController animated:YES];
-}
-
-- (UIColor *)preferredNavigationBarBackgroundColor
-{
-    return [UIColor redColor];
 }
 
 /*

@@ -51,4 +51,28 @@
 {
     return [self selectedViewController].preferredInterfaceOrientationForPresentation;
 }
+
+- (nullable id <UIViewControllerAnimatedTransitioning>)tabBarController:(UITabBarController *)tabBarController
+                     animationControllerForTransitionFromViewController:(UIViewController *)fromVC
+                                                       toViewController:(UIViewController *)toVC
+{
+    return nil;
+}
+
+- (void)navigationController:(UINavigationController *)navigationController
+      willShowViewController:(UIViewController *)viewController
+                    animated:(BOOL)animated
+{
+    if ([navigationController.viewControllers count] > 1) {
+        self.tabBar.hidden = YES;
+    }
+}
+
+- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    if ([navigationController.viewControllers count] == 1) {
+        self.tabBar.hidden = NO;
+    }
+
+}
 @end

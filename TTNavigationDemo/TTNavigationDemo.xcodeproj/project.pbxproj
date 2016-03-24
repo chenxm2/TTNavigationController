@@ -31,6 +31,8 @@
 		479139B21CA141C400D8340F /* HomePageViewControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 479139AA1CA141C400D8340F /* HomePageViewControllerFactory.m */; };
 		479139B31CA141C400D8340F /* secondHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 479139AC1CA141C400D8340F /* secondHomeViewController.m */; };
 		479139B41CA141C400D8340F /* secondHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 479139AD1CA141C400D8340F /* secondHomeViewController.xib */; };
+		47913A021CA3848100D8340F /* ThirdHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47913A001CA3848100D8340F /* ThirdHomeViewController.m */; };
+		47913A031CA3848100D8340F /* ThirdHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47913A011CA3848100D8340F /* ThirdHomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,9 @@
 		479139AB1CA141C400D8340F /* secondHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondHomeViewController.h; sourceTree = "<group>"; };
 		479139AC1CA141C400D8340F /* secondHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondHomeViewController.m; sourceTree = "<group>"; };
 		479139AD1CA141C400D8340F /* secondHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = secondHomeViewController.xib; sourceTree = "<group>"; };
+		479139FF1CA3848100D8340F /* ThirdHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdHomeViewController.h; sourceTree = "<group>"; };
+		47913A001CA3848100D8340F /* ThirdHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdHomeViewController.m; sourceTree = "<group>"; };
+		47913A011CA3848100D8340F /* ThirdHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdHomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +251,9 @@
 				479139AB1CA141C400D8340F /* secondHomeViewController.h */,
 				479139AC1CA141C400D8340F /* secondHomeViewController.m */,
 				479139AD1CA141C400D8340F /* secondHomeViewController.xib */,
+				479139FF1CA3848100D8340F /* ThirdHomeViewController.h */,
+				47913A001CA3848100D8340F /* ThirdHomeViewController.m */,
+				47913A011CA3848100D8340F /* ThirdHomeViewController.xib */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -357,6 +365,7 @@
 				4791395F1CA1414D00D8340F /* LaunchScreen.storyboard in Resources */,
 				4791395C1CA1414D00D8340F /* Assets.xcassets in Resources */,
 				4791395A1CA1414D00D8340F /* Main.storyboard in Resources */,
+				47913A031CA3848100D8340F /* ThirdHomeViewController.xib in Resources */,
 				479139991CA141AE00D8340F /* Settings.storyboard in Resources */,
 				479139B41CA141C400D8340F /* secondHomeViewController.xib in Resources */,
 			);
@@ -395,6 +404,7 @@
 				479139B31CA141C400D8340F /* secondHomeViewController.m in Sources */,
 				479139981CA141AE00D8340F /* MainTabBarController.m in Sources */,
 				479139AE1CA141C400D8340F /* CustomPopAnimatedTransition.m in Sources */,
+				47913A021CA3848100D8340F /* ThirdHomeViewController.m in Sources */,
 				479139B21CA141C400D8340F /* HomePageViewControllerFactory.m in Sources */,
 				479139511CA1414D00D8340F /* main.m in Sources */,
 				4791399D1CA141AE00D8340F /* TTNavigationController.m in Sources */,

@@ -26,7 +26,7 @@
         <!--Home Page View Controller-->
         <scene sceneID="uxK-36-xsT">
             <objects>
-                <viewController id="nsW-ty-qfg" customClass="HomePageViewController" sceneMemberID="viewController">
+                <viewController autoresizesArchivedViewToFullSize="NO" id="nsW-ty-qfg" customClass="HomePageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C6X-ZI-6Xc"/>
                         <viewControllerLayoutGuide type="bottom" id="odK-Uw-Edn"/>

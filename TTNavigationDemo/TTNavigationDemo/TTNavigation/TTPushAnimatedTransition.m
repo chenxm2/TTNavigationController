@@ -16,6 +16,8 @@
 
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext
 {
+    CGRect screenSize = [UIScreen mainScreen].bounds;
+    
     UIViewController* toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     UINavigationController *navigationController = toViewController.navigationController;
     BOOL statusBarHidden = toViewController.prefersStatusBarHidden;
@@ -23,7 +25,7 @@
     BOOL toolBarHidden = navigationController.toolbarHidden;
     
     
-    CGRect frame = toViewController.view.bounds;
+    CGRect frame = screenSize;
     if (!navigationBarHidden) {
         CGFloat navigationBarHeight = CGRectGetHeight(navigationController.navigationBar.frame);
         frame.origin.y += navigationBarHeight;
