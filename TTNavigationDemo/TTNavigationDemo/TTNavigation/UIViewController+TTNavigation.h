@@ -38,6 +38,10 @@
 *
 * So you can use this file to set for the default scheme.
 * And you also don't need it at all, if so, you should add it to your project.
+ 
+* If you use the UIViewController+TTNavigation, you can no longer use the
+* UINavigationController's delegate to make the animatedTransition. You Just can use the
+* TTViewControllerProtocol to do this;
 */
 
 

@@ -42,6 +42,9 @@
  * And in some scheme you want make different, you can realize TTViewControllerProtocol
  * in your viewController(must subclass of UIViewController). The primary class method has
  * the higher priority.
+ * If you use the UIViewController+TTNavigation, you can no longer use the 
+ * UINavigationController's delegate to make the animatedTransition. You Just can use the
+ * TTViewControllerProtocol to do this;
  *
  * you can learn the useage detail from the TTNavigationDemo
  */
