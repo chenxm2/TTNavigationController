@@ -8,6 +8,8 @@
 
 #import "UIViewController+TTNavigation.h"
 #import <objc/runtime.h>
+#import "TTPopAnimatedTransition.h"
+#import "TTPushAnimatedTransition.h"
 
 @interface MethodInfo : NSObject
 @property (nonatomic, assign) IMP imp;
@@ -163,7 +165,7 @@
 }
 
 /**
- *  Default is nil.
+ *  Default is yellow.
  */
 - (UIColor *)preferredNavigationBarBackgroundColor
 {
@@ -181,9 +183,21 @@
     return result;
 }
 
+/*
+ * default value is TTPushAnimatedTransition or TTPopAnimatedTransition
+ */
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC;
 {
     id<UIViewControllerAnimatedTransitioning> result = nil;
+    if (operation == UINavigationControllerOperationPush)
+    {
+        result = [TTPushAnimatedTransition new];
+    }
+    else if (operation == UINavigationControllerOperationPop)
+    {
+        result = [TTPopAnimatedTransition new];
+    }
+    
     
     MethodInfo *methodInfo = [self lastMethodInfoWithName:@"navigationController:animationControllerForOperation:fromViewController:toViewController:"];
     if ([self isPrimaryClassRealizeMethod:methodInfo])
