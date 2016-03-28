@@ -11,7 +11,7 @@
 @implementation HomePageViewControllerFactory
 + (instancetype)sharedFactory
 {
-    dispatch_once_t onceToken;
+    static dispatch_once_t onceToken;
     static HomePageViewControllerFactory *g_instance = nil;
     
     dispatch_once(&onceToken, ^{

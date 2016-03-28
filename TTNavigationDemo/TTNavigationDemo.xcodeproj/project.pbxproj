@@ -9,16 +9,12 @@
 /* Begin PBXBuildFile section */
 		479139511CA1414D00D8340F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 479139501CA1414D00D8340F /* main.m */; };
 		479139541CA1414D00D8340F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 479139531CA1414D00D8340F /* AppDelegate.m */; };
-		479139571CA1414D00D8340F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 479139561CA1414D00D8340F /* ViewController.m */; };
 		4791395A1CA1414D00D8340F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 479139581CA1414D00D8340F /* Main.storyboard */; };
 		4791395C1CA1414D00D8340F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4791395B1CA1414D00D8340F /* Assets.xcassets */; };
 		4791395F1CA1414D00D8340F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4791395D1CA1414D00D8340F /* LaunchScreen.storyboard */; };
 		4791396A1CA1414D00D8340F /* TTNavigationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 479139691CA1414D00D8340F /* TTNavigationDemoTests.m */; };
 		479139751CA1414D00D8340F /* TTNavigationDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 479139741CA1414D00D8340F /* TTNavigationDemoUITests.m */; };
 		479139981CA141AE00D8340F /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 479139831CA141AE00D8340F /* MainTabBarController.m */; };
-		479139991CA141AE00D8340F /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 479139861CA141AE00D8340F /* Settings.storyboard */; };
-		4791399A1CA141AE00D8340F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 479139881CA141AE00D8340F /* SettingsViewController.m */; };
-		4791399B1CA141AE00D8340F /* SettingsViewControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4791398A1CA141AE00D8340F /* SettingsViewControllerFactory.m */; };
 		4791399C1CA141AE00D8340F /* StoryboardViewControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4791398C1CA141AE00D8340F /* StoryboardViewControllerFactory.m */; };
 		4791399D1CA141AE00D8340F /* TTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4791398F1CA141AE00D8340F /* TTNavigationController.m */; };
 		4791399E1CA141AE00D8340F /* TTPopAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 479139911CA141AE00D8340F /* TTPopAnimatedTransition.m */; };
@@ -57,8 +53,6 @@
 		479139501CA1414D00D8340F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		479139521CA1414D00D8340F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		479139531CA1414D00D8340F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		479139551CA1414D00D8340F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		479139561CA1414D00D8340F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		479139591CA1414D00D8340F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4791395B1CA1414D00D8340F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4791395E1CA1414D00D8340F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,11 +65,6 @@
 		479139761CA1414D00D8340F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		479139821CA141AE00D8340F /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
 		479139831CA141AE00D8340F /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
-		479139861CA141AE00D8340F /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
-		479139871CA141AE00D8340F /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
-		479139881CA141AE00D8340F /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
-		479139891CA141AE00D8340F /* SettingsViewControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewControllerFactory.h; sourceTree = "<group>"; };
-		4791398A1CA141AE00D8340F /* SettingsViewControllerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewControllerFactory.m; sourceTree = "<group>"; };
 		4791398B1CA141AE00D8340F /* StoryboardViewControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardViewControllerFactory.h; sourceTree = "<group>"; };
 		4791398C1CA141AE00D8340F /* StoryboardViewControllerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardViewControllerFactory.m; sourceTree = "<group>"; };
 		4791398E1CA141AE00D8340F /* TTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNavigationController.h; sourceTree = "<group>"; };
@@ -154,8 +143,6 @@
 			isa = PBXGroup;
 			children = (
 				4791398D1CA141AE00D8340F /* TTNavigation */,
-				479139851CA141AE00D8340F /* Setting */,
-				479139841CA141AE00D8340F /* Me */,
 				479139A11CA141C400D8340F /* HomePage */,
 				479139821CA141AE00D8340F /* MainTabBarController.h */,
 				479139831CA141AE00D8340F /* MainTabBarController.m */,
@@ -164,8 +151,6 @@
 				479139971CA141AE00D8340F /* TTNavigationDemo-Prefix.pch */,
 				479139521CA1414D00D8340F /* AppDelegate.h */,
 				479139531CA1414D00D8340F /* AppDelegate.m */,
-				479139551CA1414D00D8340F /* ViewController.h */,
-				479139561CA1414D00D8340F /* ViewController.m */,
 				479139581CA1414D00D8340F /* Main.storyboard */,
 				4791395B1CA1414D00D8340F /* Assets.xcassets */,
 				4791395D1CA1414D00D8340F /* LaunchScreen.storyboard */,
@@ -199,25 +184,6 @@
 				479139761CA1414D00D8340F /* Info.plist */,
 			);
 			path = TTNavigationDemoUITests;
-			sourceTree = "<group>";
-		};
-		479139841CA141AE00D8340F /* Me */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Me;
-			sourceTree = "<group>";
-		};
-		479139851CA141AE00D8340F /* Setting */ = {
-			isa = PBXGroup;
-			children = (
-				479139861CA141AE00D8340F /* Settings.storyboard */,
-				479139871CA141AE00D8340F /* SettingsViewController.h */,
-				479139881CA141AE00D8340F /* SettingsViewController.m */,
-				479139891CA141AE00D8340F /* SettingsViewControllerFactory.h */,
-				4791398A1CA141AE00D8340F /* SettingsViewControllerFactory.m */,
-			);
-			path = Setting;
 			sourceTree = "<group>";
 		};
 		4791398D1CA141AE00D8340F /* TTNavigation */ = {
@@ -366,7 +332,6 @@
 				4791395C1CA1414D00D8340F /* Assets.xcassets in Resources */,
 				4791395A1CA1414D00D8340F /* Main.storyboard in Resources */,
 				47913A031CA3848100D8340F /* ThirdHomeViewController.xib in Resources */,
-				479139991CA141AE00D8340F /* Settings.storyboard in Resources */,
 				479139B41CA141C400D8340F /* secondHomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,12 +357,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4791399B1CA141AE00D8340F /* SettingsViewControllerFactory.m in Sources */,
-				479139571CA1414D00D8340F /* ViewController.m in Sources */,
 				479139A01CA141AE00D8340F /* UIViewController+TTNavigation.m in Sources */,
 				479139541CA1414D00D8340F /* AppDelegate.m in Sources */,
 				479139B11CA141C400D8340F /* HomePageViewController.m in Sources */,
-				4791399A1CA141AE00D8340F /* SettingsViewController.m in Sources */,
 				4791399C1CA141AE00D8340F /* StoryboardViewControllerFactory.m in Sources */,
 				479139AF1CA141C400D8340F /* CustomPushAnimatedTransition.m in Sources */,
 				4791399F1CA141AE00D8340F /* TTPushAnimatedTransition.m in Sources */,
@@ -552,6 +514,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TTNavigationDemo/TTNavigationDemo-Prefix.pch";
 				INFOPLIST_FILE = TTNavigationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TTNavigationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -565,6 +528,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TTNavigationDemo/TTNavigationDemo-Prefix.pch";
 				INFOPLIST_FILE = TTNavigationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TTNavigationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

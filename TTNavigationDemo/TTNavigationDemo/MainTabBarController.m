@@ -8,7 +8,6 @@
 
 #import "MainTabBarController.h"
 #import "HomePageViewControllerFactory.h"
-#import "SettingsViewControllerFactory.h"
 
 @interface MainTabBarController () <UITabBarControllerDelegate, UINavigationControllerDelegate>
 @property (nonatomic, strong) UINavigationController *homePageNavController;
@@ -24,10 +23,8 @@
     
     _homePageNavController = [[HomePageViewControllerFactory sharedFactory] instantiateHomePageNavigationController];
     _homePageNavController.delegate = self;
-    _settingsNavController = [[SettingsViewControllerFactory sharedFactory] instantiateSettingsNavigationController];
-    _settingsNavController.delegate = self;
     
-    self.viewControllers = @[_homePageNavController, _settingsNavController];
+    self.viewControllers = @[_homePageNavController];
 }
 
 #pragma mark - StatusBarStyle
