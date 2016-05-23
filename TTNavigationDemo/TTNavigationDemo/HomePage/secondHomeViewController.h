@@ -6,7 +6,6 @@
 //  Copyright © 2016年 xianmingchen. All rights reserved.
 //
 
-#import "TTViewControllerProtocol.h"
-@interface secondHomeViewController : UIViewController <TTViewControllerProtocol>
+@interface secondHomeViewController : UIViewController
 
 @end

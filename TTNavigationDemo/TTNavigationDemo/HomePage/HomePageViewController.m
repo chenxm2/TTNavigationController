@@ -10,9 +10,10 @@
 #import "secondHomeViewController.h"
 #import "CustomPushAnimatedTransition.h"
 #import "CustomPopAnimatedTransition.h"
+#import "TTViewControllerNavigationProtocol.h"
 
 
-@interface HomePageViewController ()
+@interface HomePageViewController () <TTViewControllerNavigationTransitionProtocol>
 @property (nonatomic, strong) CustomPushAnimatedTransition *customPush;
 @property (nonatomic, strong) CustomPopAnimatedTransition *customPop;
 @end
@@ -36,7 +37,7 @@
 }
 
 
-#pragma mark - TTViewControllerProtocol
+#pragma mark - TTViewControllerNavigationTransitionProtocol
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC
 {
     id<UIViewControllerAnimatedTransitioning> animatedTransition = nil;

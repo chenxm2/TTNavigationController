@@ -222,20 +222,7 @@
                                                            toViewController:(UIViewController *)toVC
 {
     
-    //remove the warning
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wundeclared-selector"
-
-    BOOL responds = [[UIViewController class] respondsToSelector:@selector(TTCheckUIViewControllerTTNavigationCategoryExist)];
-#pragma clang diagnostic pop
-    
-    if ([_interceptor.realDelegate respondsToSelector:@selector(navigationController:animationControllerForOperation:fromViewController:toViewController:)]
-        && !responds /*the project not use UIViewController+TTNavigation File*/)
-    {
-        //give control back to realDeleagte
-        return [_interceptor.realDelegate navigationController:navigationController animationControllerForOperation:operation fromViewController:fromVC toViewController:toVC];
-    }
-    else if ([fromVC respondsToSelector:@selector(navigationController:animationControllerForOperation:fromViewController:toViewController:)] || [toVC respondsToSelector:@selector(navigationController:animationControllerForOperation:fromViewController:toViewController:)])
+    if ([fromVC respondsToSelector:@selector(navigationController:animationControllerForOperation:fromViewController:toViewController:)] || [toVC respondsToSelector:@selector(navigationController:animationControllerForOperation:fromViewController:toViewController:)])
     {
         __autoreleasing id<UIViewControllerAnimatedTransitioning> animator = nil;
         id target = nil;
@@ -265,26 +252,8 @@
             
             return animator;
         }
-        else
-        {
-            return nil;
-        }
     }
-    else
-    {
-        if (operation == UINavigationControllerOperationPush)
-        {
-            return self.pushAnimator;
-        }
-        else if (operation == UINavigationControllerOperationPop)
-        {
-            return self.popAnimator;
-        }
-        else
-        {
-            return nil;
-        }   
-    }
+    return nil;
 }
 
 #pragma mark - over write from UINavigationController

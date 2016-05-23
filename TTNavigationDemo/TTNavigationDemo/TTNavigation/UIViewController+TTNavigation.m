@@ -26,10 +26,6 @@
 /*
  * user can ignore it. it use by TTNavigationController
  */
-+ (void)TTCheckUIViewControllerTTNavigationCategoryExist
-{
-}
-
 - (MethodInfo *)lastMethodInfoWithName:(NSString *)methodName
 {
     if ([methodName length] <= 0)
@@ -83,7 +79,7 @@
     return result;
 }
 
-#pragma mark - TTViewControllerProtocol
+#pragma mark - TTViewControllerNavigationAppearanceProtocol
 /**
  *  Default is NO.
  */
@@ -183,6 +179,7 @@
     return result;
 }
 
+#pragma mark - TTViewControllerNavigationTransitionProtocol
 /*
  * default value is TTPushAnimatedTransition or TTPopAnimatedTransition
  */

@@ -8,7 +8,9 @@
 
 #import "secondHomeViewController.h"
 #import "ThirdHomeViewController.h"
-@interface secondHomeViewController ()
+#import "TTViewControllerNavigationProtocol.h"
+
+@interface secondHomeViewController () <TTViewControllerNavigationAppearanceProtocol>
 
 @end
 

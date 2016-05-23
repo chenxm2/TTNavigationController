@@ -73,7 +73,7 @@
 		479139911CA141AE00D8340F /* TTPopAnimatedTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTPopAnimatedTransition.m; sourceTree = "<group>"; };
 		479139921CA141AE00D8340F /* TTPushAnimatedTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPushAnimatedTransition.h; sourceTree = "<group>"; };
 		479139931CA141AE00D8340F /* TTPushAnimatedTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTPushAnimatedTransition.m; sourceTree = "<group>"; };
-		479139941CA141AE00D8340F /* TTViewControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTViewControllerProtocol.h; sourceTree = "<group>"; };
+		479139941CA141AE00D8340F /* TTViewControllerNavigationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTViewControllerNavigationProtocol.h; sourceTree = "<group>"; };
 		479139951CA141AE00D8340F /* UIViewController+TTNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TTNavigation.h"; sourceTree = "<group>"; };
 		479139961CA141AE00D8340F /* UIViewController+TTNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TTNavigation.m"; sourceTree = "<group>"; };
 		479139971CA141AE00D8340F /* TTNavigationDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TTNavigationDemo-Prefix.pch"; sourceTree = "<group>"; };
@@ -195,7 +195,7 @@
 				479139911CA141AE00D8340F /* TTPopAnimatedTransition.m */,
 				479139921CA141AE00D8340F /* TTPushAnimatedTransition.h */,
 				479139931CA141AE00D8340F /* TTPushAnimatedTransition.m */,
-				479139941CA141AE00D8340F /* TTViewControllerProtocol.h */,
+				479139941CA141AE00D8340F /* TTViewControllerNavigationProtocol.h */,
 				479139951CA141AE00D8340F /* UIViewController+TTNavigation.h */,
 				479139961CA141AE00D8340F /* UIViewController+TTNavigation.m */,
 			);

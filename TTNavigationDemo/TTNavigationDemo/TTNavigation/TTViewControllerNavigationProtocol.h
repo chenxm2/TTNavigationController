@@ -1,5 +1,5 @@
 //
-//  TTViewControllerProtocol.h
+//  TTViewControllerNavigationProtocol.h
 //  GoForward
 //
 //  Created by xianmingchen on 16/3/18.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol TTViewControllerProtocol <NSObject>
+@protocol TTViewControllerNavigationAppearanceProtocol <NSObject>
 @optional
 
 #pragma mark - navigationBar Appearance
@@ -43,7 +43,9 @@
  *  Default is nil.
  */
 - (UIColor *)preferredNavigationBarBackgroundColor;
+@end
 
+@protocol TTViewControllerNavigationTransitionProtocol <NSObject>
 
 #pragma mark - navigation push or pop Transitioning
 /*

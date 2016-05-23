@@ -11,7 +11,7 @@
 * the TTNavigationController very suitable for create a new app. if your app is exist, it also work.
 * if you have a app. in app, most scheme of the navigationBar appearance and the
 * animatedTransition is same. you can use the UIViewController+TTNavigation and change
-* the initial value at the begin of method those realize from TTViewControllerProtocol.
+* the initial value at the begin of method those realize from TTViewControllerNavigationProtocol.h.
 * example:
 *
 *      the method is in UIViewController+TTNavigation
@@ -32,7 +32,7 @@
 }
 *
 *
-* And in some scheme you want make different, you can realize TTViewControllerProtocol
+* And in some scheme you want make different, you can realize methods in TTViewControllerNavigationProtocol.h
 * in your viewController(must subclass of UIViewController). The primary class method has
 * the higher priority.
 *
@@ -41,12 +41,12 @@
  
 * If you use the UIViewController+TTNavigation, you can no longer use the
 * UINavigationController's delegate to make the animatedTransition. You Just can use the
-* TTViewControllerProtocol to do this;
+* method in TTViewControllerNavigationProtocol to do this;
 */
 
 
 #import <UIKit/UIKit.h>
-#import "TTViewControllerProtocol.h"
-@interface UIViewController (TTNavigation) <TTViewControllerProtocol>
+#import "TTViewControllerNavigationProtocol.h"
+@interface UIViewController (TTNavigation) <TTViewControllerNavigationAppearanceProtocol, TTViewControllerNavigationTransitionProtocol>
 
 @end
