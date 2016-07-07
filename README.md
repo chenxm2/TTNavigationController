@@ -16,7 +16,7 @@
  the method is in UIViewController+TTNavigation<br/>
  \- (UIColor *)preferredNavigationBarBackgroundColor<br/>
 {<br/>
-    UIColor *result = [UIColor yellowColor]; (this is the initial value, you can change it);<br/>
+  UIColor *result = [UIColor yellowColor]; (this is the initial value, you can change it);<br/>
     MethodInfo *methodInfo = [self lastMethodInfoWithName:@"preferredNavigationBarBackgroundColor"];<br/>
     if ([self isPrimaryClassRealizeMethod:methodInfo])<br/>
     {<br/>
