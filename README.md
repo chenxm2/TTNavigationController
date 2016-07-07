@@ -15,18 +15,18 @@
  example: <br/>
  the method is in UIViewController+TTNavigation<br/>
 
-\- (UIColor *)preferredNavigationBarBackgroundColor
-{
-    UIColor *result = [UIColor yellowColor]; (this is the initial value, you can change it);
-    MethodInfo *methodInfo = [self lastMethodInfoWithName:@"preferredNavigationBarBackgroundColor"];
-    if ([self isPrimaryClassRealizeMethod:methodInfo])
+    \- (UIColor *)preferredNavigationBarBackgroundColor
     {
-        typedef UIColor* (*funcType)(id, SEL);
-        funcType func = (funcType)methodInfo.imp;
-        result = func(self, methodInfo.sel);
+        UIColor *result = [UIColor yellowColor]; (this is the initial value, you can change it);
+        MethodInfo *methodInfo = [self lastMethodInfoWithName:@"preferredNavigationBarBackgroundColor"];
+        if ([self isPrimaryClassRealizeMethod:methodInfo])
+        {
+            typedef UIColor* (*funcType)(id, SEL);
+            funcType func = (funcType)methodInfo.imp;
+            result = func(self, methodInfo.sel);
+        }
+        return result;
     }
-    return result;
-}
 
 <br/>
 <br/>
