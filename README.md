@@ -14,7 +14,7 @@
  the initial value at the begin of method those realize from TTViewControllerNavigationAppearanceProtocol.<br/>
  example: <br/>
  the method is in UIViewController+TTNavigation<br/>
- 
+
  \- (UIColor *)preferredNavigationBarBackgroundColor<br/>
 {<br/>
     UIColor *result = [UIColor yellowColor]; (this is the initial value, you can change it);<br/>
@@ -36,7 +36,6 @@
  If you use the UIViewController+TTNavigation, you can no longer use the 
  UINavigationController's delegate to make the animatedTransition. You Just can use the
  TTViewControllerNavigationAppearanceProtocol and TTViewControllerNavigationTransitionProtocol to do this;
-
  ！！！important:if you are chinese,you can read document file to know why I design this.Or you only can read the code.
  you can learn the useage detail from the TTNavigationDemo
 
