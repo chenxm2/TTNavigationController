@@ -2,12 +2,12 @@
 
 
  TTNavigationController is subClass of UINavigationController
- it provide that:
- 1、left screenedgepangesturere to pop controller
- 2、custom the navigationBar appearance by realize TTViewControllerNavigationAppearanceProtocol
- 3、custom the push and pop animatedTransition by realize TTViewControllerNavigationTransitionProtocol
+ it provide that:<br/>
+ 1、left screenedgepangesturere to pop controller<br/>
+ 2、custom the navigationBar appearance by realize TTViewControllerNavigationAppearanceProtocol<br/>
+ 3、custom the push and pop animatedTransition by realize TTViewControllerNavigationTransitionProtocol<br/>
 
- suggestion:
+ suggestion:<br/>
  the TTNavigationController very suitable for create a new app. if your app is exist, it also work.
  if you have a app. in app, most scheme of the navigationBar appearance and the 
  animatedTransition is same. you can use the UIViewController+TTNavigation and change
