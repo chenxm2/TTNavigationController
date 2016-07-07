@@ -15,7 +15,7 @@
  example: <br/>
  the method is in UIViewController+TTNavigation<br/>
 
-    \- (UIColor *)preferredNavigationBarBackgroundColor
+    - (UIColor *)preferredNavigationBarBackgroundColor
     {
         UIColor *result = [UIColor yellowColor]; (this is the initial value, you can change it);
         MethodInfo *methodInfo = [self lastMethodInfoWithName:@"preferredNavigationBarBackgroundColor"];
@@ -28,8 +28,6 @@
         return result;
     }
 
-<br/>
-<br/>
  And in some scheme you want make different, you can realize the methods ind TTViewControllerNavigationProtocol.h
  in your viewController(must subclass of UIViewController). The primary class method has
  the higher priority.
