@@ -13,7 +13,7 @@
  animatedTransition is same. you can use the UIViewController+TTNavigation and change<br/>
  the initial value at the begin of method those realize from TTViewControllerNavigationAppearanceProtocol.<br/>
  example: <br/>
- the method is in UIViewController+TTNavigation
+ the method is in UIViewController+TTNavigation<br/>
  \- (UIColor *)preferredNavigationBarBackgroundColor<br/>
 {<br/>
     UIColor *result = [UIColor yellowColor]; (this is the initial value, you can change it);<br/>
