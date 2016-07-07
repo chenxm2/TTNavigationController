@@ -14,23 +14,22 @@
  the initial value at the begin of method those realize from TTViewControllerNavigationAppearanceProtocol.<br/>
  example: <br/>
  the method is in UIViewController+TTNavigation
-- (UIColor *)preferredNavigationBarBackgroundColor
-{
-UIColor *result = [UIColor yellowColor]; (this is the initial value, you can change it);
+ \- (UIColor *)preferredNavigationBarBackgroundColor<br/>
+{<br/>
+    UIColor *result = [UIColor yellowColor]; (this is the initial value, you can change it);<br/>
 
-MethodInfo *methodInfo = [self lastMethodInfoWithName:@"preferredNavigationBarBackgroundColor"];
-if ([self isPrimaryClassRealizeMethod:methodInfo])
-{
-typedef UIColor* (*funcType)(id, SEL);
-funcType func = (funcType)methodInfo.imp;
+    MethodInfo *methodInfo = [self lastMethodInfoWithName:@"preferredNavigationBarBackgroundColor"];<br/>
+    if ([self isPrimaryClassRealizeMethod:methodInfo])<br/>
+    {<br/>
+        typedef UIColor* (*funcType)(id, SEL);<br/>
+        funcType func = (funcType)methodInfo.imp;<br/>
+        result = func(self, methodInfo.sel);<br/>
+    }<br/>
 
-result = func(self, methodInfo.sel);
-}
-
-return result;
-}
-
-
+    return result;<br/>
+}<br/>
+<br/>
+<br/>
  And in some scheme you want make different, you can realize the methods ind TTViewControllerNavigationProtocol.h
  in your viewController(must subclass of UIViewController). The primary class method has
  the higher priority.
@@ -40,4 +39,4 @@ return result;
 
  ！！！important:if you are chinese,you can read document file to know why I design this.Or you only can read the code.
  you can learn the useage detail from the TTNavigationDemo
-/
+
