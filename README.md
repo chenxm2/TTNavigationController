@@ -17,7 +17,6 @@
  \- (UIColor *)preferredNavigationBarBackgroundColor<br/>
 {<br/>
     UIColor *result = [UIColor yellowColor]; (this is the initial value, you can change it);<br/>
-
     MethodInfo *methodInfo = [self lastMethodInfoWithName:@"preferredNavigationBarBackgroundColor"];<br/>
     if ([self isPrimaryClassRealizeMethod:methodInfo])<br/>
     {<br/>
@@ -25,7 +24,6 @@
         funcType func = (funcType)methodInfo.imp;<br/>
         result = func(self, methodInfo.sel);<br/>
     }<br/>
-
     return result;<br/>
 }<br/>
 <br/>
